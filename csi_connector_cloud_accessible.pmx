@@ -1,0 +1,21 @@
+---
+name: CSI Connector Cloud Accessible
+description: A csi connector that is also accessible to manage from the cloud
+keywords: ''
+type: Default
+documentation: |-
+  Go to the application after setup to configure it.
+
+  To be able to manage the connector from the cloud, pleace input the public url that is shown in the install log in the configure view
+images:
+- name: wizardapps_ngrok
+  source: wizardapps/ngrok:latest
+  category: proxy
+  type: Default
+  links:
+  - service: bjornno_connector_example
+    alias: app
+- name: bjornno_connector_example
+  source: bjornno/connector_example:latest
+  category: connector
+  type: Default

@@ -1,0 +1,15 @@
+---
+name: 'CSI Connector '
+description: "CSI connector example.\r\nThis template only gives local (on-prem) admin
+  access.\r\n\r\n"
+keywords: ''
+type: Default
+documentation: ''
+images:
+- name: bjornno_connector_example_latest
+  source: bjornno/connector_example:latest
+  type: Default
+  ports:
+  - host_port: '9292'
+    container_port: '80'
+    proto: TCP
